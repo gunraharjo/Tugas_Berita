@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gunawan.myuas">
+    <!--<uses-permission android:name="android.permission.INTERNET" />-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/berita"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/berita"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.gunawan.myuas.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.gunawan.myuas.pengaduan.DetailPengaduanActivity" />
+        <activity android:name="com.gunawan.myuas.pengaduan.TambahPengaduanActivity" />
+        <activity
+            android:name="com.gunawan.myuas.pengaduan.PengaduanActivity"
+            android:label="@string/title_activity_pengaduan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.gunawan.myuas.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gunawan.myuas.MainActivity"
+            android:label="UASGunawan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.gunawan.myuas.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
